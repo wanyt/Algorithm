@@ -8,6 +8,7 @@ import java.util.Iterator;
  * author wang
  * <p>
  * Description: 单链表实现的栈
+ * 《算法》p94
  * <p>
  * Remarks: 栈是一种先进后出/后进先出的数据结构
  * 比如，桌子上放置的一叠文件，新文件总会被放到最上面；
