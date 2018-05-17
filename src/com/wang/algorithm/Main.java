@@ -5,7 +5,43 @@ import java.util.Iterator;
 public class Main {
 
     public static void main(String[] args) {
+        testQueueLinkList();
+    }
 
+    /**
+     * {@link QueueLinkList} 的测试方法
+     */
+    private static void testQueueLinkList() {
+        QueueLinkList<String> queue = new QueueLinkList<>();
+        queue.add("1");
+        queue.add("2");
+        queue.add("3");
+        queue.add("4");
+        queue.add("5");
+        queue.add("6");
+
+        queue.remove();
+        queue.remove();
+        queue.remove();
+        queue.remove();
+        queue.remove();
+
+        System.out.println(queue.getFirst());
+        System.out.println(queue.getLast());
+
+
+        for (String element : queue) {
+            System.out.println(element);
+        }
+
+
+
+    }
+
+    /**
+     * {@link StackLinkList}的测试内容
+     */
+    private void testStackLinkList() {
         StackLinkList<String> stack = new StackLinkList<>();
         System.out.println("初始容量：" + stack.size());
 
@@ -34,7 +70,6 @@ public class Main {
                 stack) {
             System.out.println(element);
         }
-
     }
 
 }
